@@ -1,3 +1,44 @@
+@import "../../global.scss";
+
 .intro{
-    background-color: rgb(173, 228, 250);
+    background-color: white;
+    display: flex;
+
+    .left{
+        flex: 0.7;
+        overflow: hidden;
+        .colorBox{
+            width: 4000px;
+            height: 200px;
+            background-color: $mainColour;
+            position: absolute;
+            top: 150px;
+            right: -1000px;
+            opacity: 80%;
+            transform: rotate(45deg);
+            transition: all 0.5s ease;
+        }
+
+        .imgContainer{  
+            width: 82%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: visible;
+            position: relative;
+            img{
+                border-radius: 10%;
+                opacity: 90%;
+                transition: all 0.5s ease;
+                &:hover{
+                    transform: rotate(40deg) translateY(-100px);
+                    border-radius: 100%;
+                }
+                
+            }
+        }
+    }
+    .right{
+        flex: 0.5;
+    }
 }
