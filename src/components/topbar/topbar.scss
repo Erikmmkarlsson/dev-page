@@ -3,9 +3,123 @@
 .topbar{
     width: 100%;
     height: 70px;
-    background-color: $mainColour;
+    background-color: white;
+    color: $mainColour;
     position: fixed;
     top: 0;
+    z-index: 3;
+    transition: all 1s ease;
+ 
 
-    z-index: 2;
+    .wrapper{
+        padding: 10px 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+ 
+
+        .left{
+            display: flex;
+            align-items: center;
+
+            .logo{
+               font-size: 40px;
+               font-weight: 300;
+
+               text-decoration: none;
+               color: inherit;
+               margin-right: 40px;
+               transition: all 0.5s ease;
+
+               &:hover{
+                color: $hoverColour;
+                }
+
+            }
+
+            .itemContainer{
+                display: flex;
+                align-items: center;
+                margin-left: 30px;
+                transition: all 0.5s ease;
+
+                &:hover{
+                    color: $hoverColour;
+                    }
+                .icon{
+                    font-size: 18px;
+                    margin-right: 5px;
+                }
+
+                a{
+                    display: flex;
+                    align-items: center;
+                    color: inherit;
+                
+                }
+
+                span{
+                    font-size: 15px;
+                    font-weight: 400;
+                }
+
+                
+            }
+                
+        }
+
+        .right{
+            .hamburger{
+                width: 32px;
+                height: 24px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                cursor: pointer;
+                span{
+                    width: 30px;
+                    height: 3px;
+                    background-color: $mainColour;
+                    transform-origin: left;
+                    transition: all 0.5s ease;
+                    
+                    &:hover{
+                        height: 5px;
+                    }
+                }
+
+                
+            
+            }
+        }
+    }
+
+    &.active{
+        background-color: $mainColour;
+        color: white;
+
+        .hamburger{
+            span{
+                &:first-child{
+                    background-color: white;
+                    transform: rotate(45deg);
+
+                    position: relative;
+                    left: 2px;
+
+                }
+                &:nth-child(2){
+                    opacity: 0;
+                }
+                &:last-child{
+                    background-color: white;
+                    transform: rotate(-45deg);
+                    
+                    position: relative;
+                    left: 2px;
+
+                }
+            }
+        }
+    }
 }
