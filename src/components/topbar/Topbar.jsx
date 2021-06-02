@@ -6,7 +6,9 @@ export default function Topbar({menuOpen, setMenuOpen}) {
         <div className={"topbar " + (menuOpen && "active")}>
             <div className="wrapper">
                 <div className="left">
-                    <a href="#intro" className="logo">Erik </a>                
+                    <a href="#intro" className="logo">
+                        karlsson.
+                        </a>                
 
                     <div className="itemContainer">
                     <a href="mailto:erik.karlsson97@outlook.com"> <Mail className="icon"/></a>
