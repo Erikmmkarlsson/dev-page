@@ -12,8 +12,8 @@ export default function Intro() {
             showCursor: true,
             backDelay: 1000,
             backSpeed: 20,
-             strings: ['Computer Engineer', 'Fullstack Developer',
-              'Happy man.' ] 
+             strings: ['Computer Engineer.', 'Fullstack Developer.',
+              'IoT Enthusiast.' ] 
             });
         return () => {
             
@@ -36,7 +36,7 @@ export default function Intro() {
                         <span ref={textRef}></span>
                     </h3>
                 </div>
-                <a href="#portfolio">
+                <a href="#info">
                 <ExpandMore style={{ fontSize: 70 }}/>
                 </a>
             </div>

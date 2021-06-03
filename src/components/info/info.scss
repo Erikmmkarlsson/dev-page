@@ -1,0 +1,43 @@
+@import "../../global.scss";
+
+.info{
+    background-color: rgb(34, 33, 33);
+    display: flex;
+
+    .left{
+    flex: 0.4;
+
+        .wrapper{
+            padding-left: 40px;
+            padding-top: 100px;
+            color: white;
+            
+
+            display: flex;
+            flex-direction: column;
+            
+            h2{
+                z-index: 1;
+
+                padding-bottom: 10px;
+            }
+            p{
+                z-index: 1;
+
+                padding-bottom: 10px;
+            }
+
+            ul{
+                margin-left: -20px;
+                columns: 2;
+                list-style-position: inside;
+                list-style-type: "►";
+
+                li::marker{
+                color: $mainColour;
+                }
+            }
+        }
+
+    }
+}
