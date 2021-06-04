@@ -17,33 +17,50 @@ export default function Info() {
             <div className="left">
                 <div className="wrapper">
 
-                <h2>I hope you have a lovely {n}.</h2>
-                    
-                <p> My name's Erik and I love building things; 
+                    <h2>I hope you have a lovely <span>{n}. </span></h2>
+                    {/*Span in case I want to colour the weekday  */}
+
+                    <p> My name's Erik and I like building things;
                     things on the internet and internet of things. </p>
 
-                <p> I respect skill above all else, and I seek people I can learn from,
-                    and who are honest. I also value those who have ethics without the bullshit. </p>
-                   
-                <h3>These are some technologies I enjoy using:</h3>   
-               
-            <ul>
-                    <li> C# with .NET Core</li>
-                    <li> C and C++ </li>
-                    <li> Arduino </li>
-                    <li> Pycom </li>
-                    <li> Python </li>
-                    <li> React.js </li>
-                    <li> HTML/SCSS/Javascript</li>
-                    <li> SQL </li>
-                    <li> Git </li>
+                    <p> I respect skill above all else, and I seek people I can learn from,
+                    and who are honest in their feedback.
+                    I value people who have ethics without the bullshit. </p>
 
-                </ul>
+                    <p>These are some technologies I enjoy using:</p>
 
-                
+                    <ul>
+                        <li> C and C++ </li>
+                        <li> Arduino </li>
+                        <li> Pycom </li>
+                        <li> Python </li>
+                        <li> SQL </li>
+
+                        <li> C# with .NET Core</li>
+                        <li> React.js </li>
+                        <li> HTML/SCSS/Javascript</li>
+                        <li> Git </li>
+
+                    </ul>
+
+
                 </div>
             </div>
-            
+            <div className="right">
+                    <div className="card">
+                    <div className="card-content">
+
+                        <h2 className="card-title">Something awesome</h2>
+                        <p className="card-body">
+                            Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit,
+                            sed do eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua.
+                    </p>
+                        <a href="#info" className="button">Learn more. </a>
+                    </div>
+                </div>
+            </div>
         </div>
     )
 }

@@ -5,29 +5,30 @@
     display: flex;
 
     .left{
-    flex: 0.4;
+        z-index: 1;
+        flex: 0.4;
 
         .wrapper{
             padding-left: 40px;
             padding-top: 100px;
-            color: white;
+            color: $secondaryColour;
             
 
             display: flex;
             flex-direction: column;
             
             h2{
-                z-index: 1;
-
+                font-size: 35px;
                 padding-bottom: 10px;
             }
             p{
-                z-index: 1;
-
+                font-size: 20px;
                 padding-bottom: 10px;
             }
 
             ul{
+                opacity: 90%;
+                margin-top: 10px;
                 margin-left: -20px;
                 columns: 2;
                 list-style-position: inside;
@@ -37,6 +38,39 @@
                 color: $mainColour;
                 }
             }
+        }
+
+    }
+
+    .right{
+        z-index: 1;
+        flex: 0.6;
+        display: grid;
+        place-items: center;
+        .card{
+            background: url(ardy.jpg);
+            background-size: cover;
+            z-index: 2;
+            color: $secondaryColour;
+            padding: 10rem 0 0;
+            width: 35ch;
+        }
+        .card-content{
+            padding: 1.5em;
+            background: linear-gradient(
+            hsla(0, 0%, 0%, 0),
+            hsla(0, 0%, 0%, 0.4) 10%,
+            hsla(0, 0%, 0%, 1),
+            
+            );
+        }
+
+        .card-title::after{
+            content: "";
+            position: absolute;
+            height: 3px;
+            width: 100px;
+            background: $mainColour;
         }
 
     }

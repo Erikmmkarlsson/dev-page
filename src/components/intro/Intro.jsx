@@ -2,7 +2,6 @@ import "./intro.scss"
 import {ExpandMore} from "@material-ui/icons"
 import { init } from 'ityped'
 import {useEffect, useRef} from "react"
-import useSound from 'use-sound';
 export default function Intro() {
 
     const textRef = useRef();
