@@ -24,7 +24,7 @@ export default function Info() {
                     things on the internet and internet of things. </p>
 
                     <p> I strive for excellence in everything that I do - while 
-                        aiming to be humble and learning from my bad ideas and mistakes.
+                        aiming to be humble and learning from my bad ideas and mistakes. 
                         I'm passionate about what I'm doing, and I'd love to
                         learn from the best.  </p>
 
