@@ -23,9 +23,10 @@ export default function Info() {
                     <p> My name's Erik and I like building things;
                     things on the internet and internet of things. </p>
 
-                    <p> I respect skill above all else, and I seek people I can learn from,
-                    and who are honest in their feedback.
-                    I value people who have ethics without the bullshit. </p>
+                    <p> I strive for excellence in everything that I do - while 
+                        aiming to be humble and learning from my bad ideas and mistakes.
+                        I'm passionate about what I'm doing, and I'd love to
+                        learn from the best.  </p>
 
                     <p>These are some technologies I enjoy using:</p>
 
@@ -50,17 +51,18 @@ export default function Info() {
                     <div className="card">
                     <div className="card-content">
 
-                        <h2 className="card-title">Something awesome</h2>
+                        <h2 className="card-title">My technoblog</h2>
                         <p className="card-body">
-                            Lorem ipsum dolor sit amet,
-                            consectetur adipiscing elit,
-                            sed do eiusmod tempor incididunt
-                            ut labore et dolore magna aliqua.
+                            Here I share my thoughts on various
+                            topics that interest me.
                     </p>
-                        <a href="#info" className="button">Learn more. </a>
+                        <a href="#info" className="button">Check it out</a>
                     </div>
                 </div>
+
+               
             </div>
+           
         </div>
     )
 }

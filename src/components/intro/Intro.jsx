@@ -35,10 +35,12 @@ export default function Intro() {
                         <span ref={textRef}></span>
                     </h3>
                 </div>
+
                 <a href="#info">
                 <ExpandMore style={{ fontSize: 70 }}/>
                 </a>
-            </div>
+                
+            </div> 
         </div>
     )
 }
