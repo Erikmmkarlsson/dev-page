@@ -1,3 +1,36 @@
- .contact{
-     background-color: rgb(250, 91, 91);
- }
+@import "../../global.scss";
+
+ 
+    .contact{
+        overflow: hidden;
+        background-image: linear-gradient(to top right, rgb(33, 0, 33), rgb(15, 0, 15), rgb(33, 0, 33));
+        color: $secondaryColour;
+        .wrapper{
+            min-height: 100vh; // height of the browser viewport
+            flex-direction: column;
+            display: flex;
+              justify-content: center;
+            align-items: center;
+
+        .buttonContainer{
+        .button{
+            margin-top: 10px;
+            cursor: pointer;
+            display: inline-block;
+            text-decoration: none;
+            color: $mainColour;
+            background-color: none;
+            border: 2px solid $mainColour;
+            padding: .5em 1.25em;
+            border-radius: 0.25em;
+            transition: all 500ms ease;
+            &:focus{
+                background-color: $hoverColourButton;
+            }
+            &:hover{
+                background-color: $hoverColourButton;
+            }    
+        }
+        }
+        }
+    }
