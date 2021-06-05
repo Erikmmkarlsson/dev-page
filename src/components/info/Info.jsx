@@ -52,12 +52,12 @@ export default function Info() {
                     <div className="card">
                     <div className="card-content">
 
-                        <h2 className="card-title">My technoblog</h2>
+                        <h2 className="card-title">My dev blog</h2>
                         <p className="card-body">
                             Here I share my thoughts on various
                             topics that interest me.
                     </p>
-                        <a href="#info" className="button">Check it out</a>
+                        <a href="https://dev.to/erikkarlsson" className="button" target="_blank" rel="noreferrer">Check it out</a>
                     </div>
                 </div>
 
