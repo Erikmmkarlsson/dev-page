@@ -21,7 +21,6 @@ function App() {//false
           <Intro/>
           <Info/>
           <Work/>
-          <Testimonials/>
           <Contact/>
 
         </div>

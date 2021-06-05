@@ -41,6 +41,7 @@ export default function Info() {
                         <li> React.js </li>
                         <li> HTML/SCSS/Javascript</li>
                         <li> Git </li>
+                        <li> Azure </li>
 
                     </ul>
 
