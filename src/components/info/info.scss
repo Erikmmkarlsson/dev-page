@@ -11,7 +11,7 @@
         margin-right: 150px;
         .wrapper{
             padding-left: 110px;
-            padding-top: 100px;
+            padding-top: 130px;
             color: $secondaryColour;
             
             flex-direction: column;
@@ -45,7 +45,7 @@
 
     .right{
         z-index: 1;
-
+        overflow: visible;
         flex: 0.4;
         display: flex;
         flex-direction: column;
