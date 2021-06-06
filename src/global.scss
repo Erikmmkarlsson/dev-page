@@ -3,3 +3,11 @@ $mainColour: #3e3afc;
 $hoverColour: rgb(146, 72, 243);
 $hoverColourButton:  rgba(215, 167, 247, 0.1);
 $secondaryColour: white;
+
+$width: 768px;
+
+@mixin mobile{
+    @media (max-width: #{$width}){
+        @content
+    }
+}
