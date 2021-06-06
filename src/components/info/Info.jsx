@@ -12,21 +12,22 @@ export default function Info() {
     weekday[6] = "Saturday";
     var n = weekday[d.getDay()];
 
+
+
     return (
         <div className="info" id="info">
             <div className="left">
                 <div className="wrapper">
 
-                    <h2>I hope you have a lovely <span>{n}. </span></h2>
-                    {/*Span in case I want to colour the weekday  */}
-
+                    <h2>I hope you have a lovely {n}. </h2>
+                    
                     <p> My name's Erik and I like building things;
                     things on the internet and internet of things. </p>
 
-                    <p> I strive for excellence in everything that I do - while 
+                    <p><span> I strive for excellence in everything that I do - while 
                         aiming to be humble and learning from my bad ideas and mistakes. 
                         I'm passionate about what I'm doing, and I'd love to
-                        learn from the best.  </p>
+                        learn from the best.  </span></p>
 
                     <p>These are some technologies I enjoy using:</p>
 
