@@ -1,7 +1,7 @@
 @import "../../global.scss";
 
 .info{
-    background-image: linear-gradient(to bottom right, black, rgb(15, 0, 15), rgb(33, 0, 33));
+    background-image: linear-gradient(to bottom right, black, rgb(0, 1, 15), rgb(0, 2, 33));
     display: flex;
 
     @include mobile{
@@ -95,11 +95,12 @@
             width: 35ch;
             border-radius: 0.5rem;
             overflow: hidden;
+            box-shadow: .8px .9px 3px black;                
 
             @include mobile{
             padding: 5rem 0 0;
-            margin-top: 1rem;
-            margin-bottom: 2rem;
+            width: 85vw;
+            margin-top: 0rem;
             }
         }
 
@@ -171,6 +172,8 @@
                 transition: transform 500ms ease;
                 &:hover, &:focus-within{
                     transform: scale(1.05);
+                    box-shadow: 1px 8px 20px black;
+
                     .card-content{
                         transform: translateY(0);
                         transition-delay: 500ms;

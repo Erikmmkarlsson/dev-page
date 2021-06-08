@@ -7,12 +7,12 @@ export default function Contact() {
             
             <div className="wrapper">
 
-                <h1>Get in touch.</h1>
+            <h1>Get in touch.</h1>
+            <div className="buttonContainer">
 
-            <div className="buttonContainer">
             <a href="mailto:erik.karlsson97@outlook.com" className="button">Say hi</a>
-            </div>
-            <div className="buttonContainer">
+
+            
             <a href="https://github.com/Erikmmkarlsson" target="_blank" rel="noreferrer">
                     <GitHub className="icon"/>
             </a>

@@ -33,16 +33,16 @@ export default function Info() {
 
                     <ul>
                         <li> C and C++ </li>
-                        <li> Arduino </li>
-                        <li> Pycom </li>
+                        <li> Arduino</li>
                         <li> Python </li>
                         <li> SQL </li>
+                        <li> Git </li>
 
                         <li> C# with .NET Core</li>
                         <li> React.js </li>
-                        <li> HTML/SCSS/Javascript</li>
-                        <li> Git </li>
+                        <li> HTML/CSS/JS</li>
                         <li> Azure </li>
+                        <li> Pycom  </li>
 
                     </ul>
 

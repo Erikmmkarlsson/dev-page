@@ -1,9 +1,14 @@
-$mainColour: #3e3afc;
+$mainColour: hsl(244, 94%, 54%);
 
 $hoverColour: rgb(146, 72, 243);
 $hoverColourButton:  rgba(215, 167, 247, 0.1);
 $secondaryColour: white;
 
+$glowButton: rgb(55, 55, 253);
+
+$darkTransitionColour: calc($mainColour - 20); 
+
+$transitionSpeed: 300ms;
 $width: 768px;
 
 @mixin mobile{

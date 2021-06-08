@@ -8,7 +8,7 @@
     position: fixed;
     top: 0;
     z-index: 3;
-    transition: all 1s ease;
+    transition: all $transitionSpeed ease;
  
 
     .wrapper{
@@ -29,13 +29,10 @@
                text-decoration: none;
                color: inherit;
                margin-right: 10px;
-               transition: all 500ms ease;
+               transition: all $transitionSpeed ease;
 
-               &:hover{
-                color: $hoverColour;
-                }
-                &:focus{
-                    color: $hoverColour;
+                &:focus, &:hover{
+                    transform: scale(1.01);
                 }
 
             }
@@ -44,16 +41,14 @@
                 display: flex;
                 align-items: center;
                 margin-left: 30px;
-                transition: all 500ms ease;
+                transition: all $transitionSpeed ease;
 
                 @include mobile{
                     display: none;
                 }
-                &:hover{
-                    color: $hoverColour;
-                }
-                &:focus{
-                    color: $hoverColour;
+                
+                &:focus, &:hover{
+                    transform: scale(1.15);
                 }
                 .icon{
                     font-size: 18px;
@@ -91,7 +86,7 @@
                     height: 3px;
                     background-color: $mainColour;
                     transform-origin: left;
-                    transition: all 500ms ease;
+                    transition: all $transitionSpeed ease;
                     
                     &:hover{
                         height: 5px;
