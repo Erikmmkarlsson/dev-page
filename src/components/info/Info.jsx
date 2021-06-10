@@ -19,7 +19,7 @@ export default function Info() {
             <div className="left">
                 <div className="wrapper">
 
-                    <h2>I hope you have a lovely {n}. </h2>
+                    <h2>I hope you have a lovely <span>{n}.</span> </h2>
                     
                     <p> My name's Erik and I like building things;
                     things on the internet and internet of things. </p>
@@ -38,7 +38,7 @@ export default function Info() {
                         <li> SQL </li>
                         <li> Git </li>
 
-                        <li> C# with .NET Core</li>
+                        <li> C# + .NET Core</li>
                         <li> React.js </li>
                         <li> HTML/CSS/JS</li>
                         <li> Azure </li>

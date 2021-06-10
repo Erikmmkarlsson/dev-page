@@ -19,8 +19,7 @@
             align-items: center;
 
         .buttonContainer{
-            padding: 20px 100%;
-            padding-bottom: 40vh;
+            padding: 20px 100vw 40vh;
         .button{
             width: 7em;
             text-align: center;
@@ -43,7 +42,9 @@
             transition: background-color 100ms linear;
             overflow: visible;
             
- 
+            backface-visibility: hidden;
+
+            
             &::before{
                 pointer-events: none;
                 content: '';
@@ -53,13 +54,14 @@
                 left: -10%;
                 width: 120%;
                 height: 80%;
-        
-                transform: perspective(2em) 
-                rotatex(60deg) scale(0.9);
+                transform: perspective(2em) rotatex(60deg) scale(0.9);
                 filter: blur(1em);
                 opacity: 0.5;
                transition: opacity 100ms linear;
+               @-moz-document url-prefix(){opacity: 0;}
+
             }
+
             &::after{
                 content: '';
                 position: absolute;
