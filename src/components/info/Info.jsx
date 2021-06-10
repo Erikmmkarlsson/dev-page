@@ -38,7 +38,7 @@ export default function Info() {
                         <li> SQL </li>
                         <li> Git </li>
 
-                        <li> C# + .NET Core</li>
+                        <li> C#/.NET Core</li>
                         <li> React.js </li>
                         <li> HTML/CSS/JS</li>
                         <li> Azure </li>
