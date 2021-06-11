@@ -58,7 +58,7 @@ export default function Info() {
                             Here I share my thoughts on various
                             topics that interest me.
                     </p>
-                        <a href="https://dev.to/erikkarlsson" className="button" target="_blank" rel="noreferrer">Check it out</a>
+                        <a href="https://dev.to/erikkarlsson" className="button" target="blank">Check it out</a>
                     </div>
                 </div>
 

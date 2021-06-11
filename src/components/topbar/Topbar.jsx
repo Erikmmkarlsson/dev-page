@@ -14,12 +14,12 @@ export default function Topbar({menuOpen, setMenuOpen}) {
                         <a href="mailto:erik.karlsson97@outlook.com"> <Mail className="icon"/></a>
                     </div>
                     <div className="itemContainer">
-                        <a href="https://github.com/Erikmmkarlsson" target="_blank" rel="noreferrer">
+                        <a href="https://github.com/Erikmmkarlsson" target="blank">
                             <GitHub className="icon"/>
                         </a>
                     </div>
                     <div className="itemContainer">
-                      <a href="https://www.linkedin.com/in/erik-karlsson-8643a1143/" target="_blank" rel="noreferrer">
+                      <a href="https://www.linkedin.com/in/erik-karlsson-8643a1143/" target="blank">
                             <LinkedIn className="icon"/> 
                           </a>
                     </div>
