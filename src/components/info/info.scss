@@ -12,9 +12,11 @@
 
     .left{
         z-index: 1;
-        flex: 0.51;
+        overflow: visible;
+        flex: 0.5;
+        display: flex;
+        flex-direction: column;
         justify-content: center;
-        margin-right: 150px;
         @include mobile{
             flex: 1;
             margin-right: 50px;
@@ -24,11 +26,12 @@
         }
 
         .wrapper{
-            padding-left: 20ch;
-            padding-top: 10rem;
             color: $secondaryColour;
             flex-direction: column;
-            
+            margin-left: 15ch;
+            @include mobile{
+                margin-left: 0;
+            }
             h2{
                 font-size: 2.5rem;
                 padding-bottom: 20px;
@@ -82,13 +85,15 @@
     .right{
         z-index: 1;
         overflow: visible;
-        flex: 0.6;
+        flex: 1;
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
         @include mobile{
             flex: 0.2;
             justify-content: center;
+            margin-bottom: 30px;
             }
 
         .card{
