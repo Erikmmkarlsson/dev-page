@@ -24,8 +24,8 @@
         }
 
         .wrapper{
-            padding-left: 110px;
-            padding-top: 130px;
+            padding-left: 20ch;
+            padding-top: 10rem;
             color: $secondaryColour;
             flex-direction: column;
             
@@ -37,6 +37,7 @@
                 }
             }
             p{
+                color: white;
                 font-size: 1rem;
                 padding-bottom: 10px;
                 opacity: 90%;
@@ -44,6 +45,7 @@
             }
 
             ul{
+                color: white;
                 font-size: 0.9rem;
                 opacity: 80%;
                 margin-top: 0;
