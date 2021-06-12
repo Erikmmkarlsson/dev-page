@@ -7,24 +7,23 @@
     @include mobile{
         flex-direction: column;
         align-items: center;
-
     }
 
     .left{
-        flex: 0.6;
-        overflow: hidden;
-        @include mobile {
-            flex: 1;
-            overflow: visible;
-        }
+        z-index: 1;
+        overflow: visible;
+        flex: 1;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
 
         .imgContainer{  
             position: relative;
             width: 25vw;
             top: 20px;
-            bottom: 20px;
-            left: 10rem;
-
+            left: 15ch;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -56,23 +55,23 @@
         }
     }
     .right{
-        flex: 0.6;
+        flex: 1;
         overflow: hidden;
         @include mobile {
             flex: 1;
         }
 
         .wrapper{
-            width: 100%;
-            height: 100%;
+            margin-top: 50%;
             display: flex;
             flex-direction: column;
             justify-content: center;
+            align-items: center;
 
             @include mobile{
                 padding-left: 0;
                 align-items: center;
-                margin-top: -1em;
+                margin-top: 4em;
             }
 
             h1{
@@ -104,7 +103,7 @@
         a{
             color: inherit;
             position: absolute;
-            bottom: 10px;
+            bottom: 30px;
             left: 65%;
             animation: arrowBlink 5s infinite;
         }
