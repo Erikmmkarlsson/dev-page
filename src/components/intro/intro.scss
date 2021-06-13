@@ -31,7 +31,7 @@
             background: white;
             @include mobile {
                 left: 0;
-                width: 25rem;
+                width:fit-content;
                 align-items: center;
             }
             
@@ -48,7 +48,7 @@
 
                 @include mobile{
                     height: 50vh;
-
+                    width: 100%;
                 }
                 
             }
@@ -103,7 +103,7 @@
             color: inherit;
             position: absolute;
             bottom: 10px;
-            left: 65%;
+            left: 90%;
             animation: arrowBlink 2s infinite;
             @include mobile{
                 bottom: 40px;
