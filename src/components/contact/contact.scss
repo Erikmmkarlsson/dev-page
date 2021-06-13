@@ -1,93 +1,92 @@
 @import "../../global.scss";
 
-*,
-*::before,
-*::after{
-    box-sizing: border-box;
-}
  
-    .contact{
-        overflow: hidden;
-        background-image: linear-gradient(to top right, rgb(1, 0, 33), black, rgb(0, 2, 33));
-        
-        color: $secondaryColour;
-        .wrapper{
-            min-height: 100vh; // height of the browser viewport
-            flex-direction: column;
-            display: flex;
-            justify-content: flex-end;
-            align-items: center;
-
-        .buttonContainer{
-            padding: 20px 100vw 40vh;
-        .button{
-            width: 7em;
-            text-align: center;
-            font-size: 20px;
-            margin-top: 10px;
-            cursor: pointer;
-            display: inline-block;
-            text-decoration: none;
-            color: $glowButton;
-            border: 2px solid $glowButton;
-            padding: .5em 1.25em;
-            border-radius: 0.25em;
-            text-shadow: 
-                0 0 0.125em hsla(0, 0%, 100%, 0.5),
-                0 0 0.25em currentColor;
-            
-            box-shadow: inset 0 0 0.5em 0 $glowButton,
-            0 0 0.5em 0 $glowButton;
-            position: relative;
-            transition: background-color 100ms linear;
-            overflow: visible;
-            
-            backface-visibility: hidden;
-
-            
-            &::before{
-                pointer-events: none;
-                content: '';
-                position: absolute;
-                background: $glowButton;
-                top: 130%;
-                left: -10%;
-                width: 120%;
-                height: 80%;
-                transform: perspective(1em) rotatex(40deg) scale(1);
-                filter: blur(2em);
-                opacity: 0.5;
-               transition: opacity 100ms linear;
-               @-moz-document url-prefix(){opacity: 0;}
-
-            }
-
-            &::after{
-                content: '';
-                position: absolute;
-                top: 0;
-                bottom: 0;
-                left: 0;
-                right: 0;
-                box-shadow: 0 0 1.2em 0.5em $glowButton;
-                opacity: 0;
-                transition: opacity 100ms linear;
-            }
-            &:hover, &:focus{
-                background-color: $glowButton;
-                color: black;
-                text-shadow: none;
-
-                &::after{
-                    opacity: 1;
-                }
-                &::before{
-                    opacity: 1;
-                }
-            }   
+    .contact{        
+        *,
+        *::before,
+        *::after {
+          box-sizing: border-box;
         }
+        
+        
+        min-height: 100vh;
+        display: grid;
+        grid-template-rows: auto;
+        place-items: center;
+        justify-content: center;
+        align-content: center;
+        background-image: linear-gradient(to top right, rgb(1, 0, 33), black, rgb(0, 2, 33));
+        color: $secondaryColour;
 
-       
+        h1{
+            margin-bottom: 1rem;
+        }
+        
+        
+        .button {
+          font-size: 2rem;
+            overflow: visible;
+          display: inline-block;
+          cursor: pointer;
+          text-decoration: none;
+          color: $glowButton;
+          border: $glowButton 0.125em solid;
+          padding: 0.25em 1em;
+          border-radius: 0.25em;
+        
+          text-shadow: 
+          0 0 0.125em hsla(0, 0%, 100%, 0.3), 
+          0 0 0.45em currentColor;
+        
+          box-shadow: inset 0 0 0.5em 0 , 0 0 0.5em 0 $glowButton;
+        
+          position: relative;
+        }
+        
+        .button::before {
+          pointer-events: none;
+          content: "";
+          position: absolute;
+          background: $glowButton;
+          top: 120%;
+          left: 0;
+          width: 100%;
+          height: 100%;
+        
+          transform: perspective(1em) rotateX(40deg) scale(1, 0.35);
+          filter: blur(1em);
+          opacity: 0.7;
+        }
+        
+        .button::after {
+          content: "";
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          box-shadow: 0 0 2em 0.5em $glowButton;
+          opacity: 0;
+          background-color: $glowButton;
+          z-index: 0;
+          transition: opacity 100ms linear;
+        }
+        
+        .button:hover,
+        .button:focus {
+          color: black;
+          text-shadow: none;
+        }
+        
+        .button:hover::before,
+        .button:focus::before {
+          opacity: 1;
+        }
+        .button:hover::after,
+        .button:focus::after {
+          opacity: 1;
+        }
+        
         
 
         .icon{
@@ -103,8 +102,7 @@
                 margin: 3rem 1rem;
             }
         }
-        }
-        }
+        
     }
 
     
