@@ -41,7 +41,7 @@ export default function Info() {
                         <li> C#/.NET Core</li>
                         <li> React.js </li>
                         <li> HTML/CSS/JS</li>
-                        <li> Azure </li>
+                        <li> AWS, Azure </li>
                         <li> Pycom  </li>
 
                     </ul>
