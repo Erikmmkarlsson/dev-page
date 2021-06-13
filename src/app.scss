@@ -1,14 +1,19 @@
+@import "global.scss";
+
 .app{
     height: 100vh;
 
     .sections{
         width: 100%;
         height: calc(100vh - 70px);
-        background-color: lightskyblue;
+        background-color: black;
         position: relative;
         top: 70px;
-        scroll-behavior: auto;
-        scroll-snap-type: both mandatory;
+        scroll-behavior: smooth;
+        scroll-snap-type: y proximity;
+        @include mobile{
+            scroll-snap-type: y mandatory;
+        }
         scrollbar-width: none; //For firefox
         &::-webkit-scrollbar{ //For other browsers
             display: none;
