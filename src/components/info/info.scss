@@ -1,8 +1,6 @@
 @import "../../global.scss";
 
 .info{
-    scroll-snap-stop: always;
-
     background-image: linear-gradient(to bottom right, black, rgb(0, 1, 15), rgb(0, 2, 33));
     display: flex;
 
