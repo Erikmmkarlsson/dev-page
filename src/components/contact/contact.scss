@@ -1,7 +1,9 @@
 @import "../../global.scss";
 
  
-    .contact{        
+    .contact{   
+      scroll-snap-stop: always;
+     
         *,
         *::before,
         *::after {
