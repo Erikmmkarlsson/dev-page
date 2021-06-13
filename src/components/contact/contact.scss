@@ -54,8 +54,8 @@
                 left: -10%;
                 width: 120%;
                 height: 80%;
-                transform: perspective(2em) rotatex(60deg) scale(0.9);
-                filter: blur(1em);
+                transform: perspective(1em) rotatex(40deg) scale(1);
+                filter: blur(2em);
                 opacity: 0.5;
                transition: opacity 100ms linear;
                @-moz-document url-prefix(){opacity: 0;}
