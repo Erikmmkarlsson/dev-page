@@ -29,6 +29,8 @@
             justify-content: center;
             overflow: visible;
             background: white;
+            border-radius: 1rem;
+
             @include mobile {
                 left: 0;
                 width:fit-content;
@@ -153,7 +155,7 @@
 	list-style: none;
 	width: 25px;
 	height: 25px;
-	background: linear-gradient(to right, hsla(240, 100%, 50%, 0.4), hsla(246, 79%, 69%, 0.4));
+	background: linear-gradient(to right, hsla(219, 90%, 62%, 0.4), hsla(268, 78%, 69%, 0.4));
 
     animation: animate 20s linear infinite;
 	bottom: -150px;
