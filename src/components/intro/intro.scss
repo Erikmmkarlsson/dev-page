@@ -108,8 +108,8 @@
             left: 90%;
             animation: arrowBlink 2s infinite;
             @include mobile{
-                bottom: 40px;
-                left: 80%;
+                opacity: 0;
+                animation: none;
             }
         }
         @keyframes arrowBlink {
