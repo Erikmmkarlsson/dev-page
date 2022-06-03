@@ -21,8 +21,7 @@ export default function Info() {
 
                     <h2>I hope you have a lovely <span>{n}.</span> </h2>
                     
-                    <p> My name's Erik and I like building things;
-                    things on the internet and internet of things. </p>
+                    <p> My name's Erik and I love building things with software. </p>
 
                     <p><span> I strive for excellence in everything that I do - while 
                         aiming to be humble and learning from my bad ideas and mistakes. 
@@ -33,16 +32,16 @@ export default function Info() {
 
                     <ul>
                         <li> C and C++ </li>
-                        <li> Arduino</li>
+                        <li> Arduino, ESP32 </li>
                         <li> Python </li>
                         <li> SQL </li>
-                        <li> Git </li>
+                        <li> gRPC </li>
 
-                        <li> C#/.NET Core</li>
-                        <li> React.js </li>
+                        <li> PyTorch </li>
+                        <li> React </li>
                         <li> HTML/CSS/JS</li>
                         <li> AWS, Azure </li>
-                        <li> Pycom  </li>
+                        <li> Git </li>
 
                     </ul>
 

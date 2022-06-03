@@ -11,8 +11,8 @@ export default function Intro() {
             showCursor: true,
             backDelay: 1000,
             backSpeed: 20,
-             strings: ['Computer Engineer.', 'Fullstack Developer.',
-              'IoT Enthusiast.' ] 
+             strings: ['Software Engineer.', 'Embedded Systems Engineer.',
+              'Expertise in Neural Networks.' ] 
             });
         return () => {
             
